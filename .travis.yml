@@ -1,10 +1,13 @@
 sudo: false
 language: python
+notifications:
+  email: never
 python:
   - "2.7"
 cache: pip
 install:
   - "pip install -e .[tests,release]"
+  - pip install coveralls
 script:
   - "pylama"
   - "pytest --cov-report="
