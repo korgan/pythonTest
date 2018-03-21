@@ -1,5 +1,3 @@
-from unittest import mock
-
 import re
 import os
 from datetime import date
