@@ -6,7 +6,7 @@ try:
     setup_hook(sys.argv)
 except ImportError:
     message = "Unable to locate 'semantic_release', releasing won't work"
-    print(message, file=sys.stderr)
+    print(message)
 
 
 version = '1.0.0'
@@ -15,7 +15,6 @@ version = '1.0.0'
 install_requires = [
     'requests',
 ]
-
 
 tests_require = [
     'pytest-runner',
