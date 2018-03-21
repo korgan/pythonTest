@@ -1,0 +1,13 @@
+sudo: false
+language: python
+python:
+  - "2.6"
+  - "2.7"
+cache: pip
+install:
+  - "pip install -e .[tests,release]"
+script:
+  - "pylama"
+  - "pytest --cov-report="
+after_success:
+  - "coveralls"
