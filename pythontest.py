@@ -1,9 +1,4 @@
-import re
-from datetime import datetime, date
 import requests
-import responses
-
-
 
 __all__ = ('PythonTest')
 
